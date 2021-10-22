@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project-details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+
+    <!--===============================================================================================-->
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="../images/favicon.png" sizes="16x16 32x32" type="image/png">
+
+
+
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <!--===================================== navbar =====================================-->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#"><img src="../images/Screenshot__315_-removebg-preview.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html" class="menu-btn">Home</a></li>
+                <li><a href="../about1.html" class="menu-btn">About</a></li>
+                <li><a href="../index.html#services" class="menu-btn">Services</a></li>
+                <li><a href="../index.html#skills" class="menu-btn">Technologies</a></li>
+                <li><a href="../index.html#teams" class="menu-btn">Team</a></li>
+                <li><a href="../index.html#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br>
+    <!--===================================== navbar =====================================-->
+
+
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form" action="submit.php" method="post">
+                <span class="contact100-form-title">
+					Project details
+				</span>
+
+                <div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+                    <span class="label-input100">FULL NAME *</span>
+                    <input class="input100" type="text" name="name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Enter Your Email (e@a.x)">
+                    <span class="label-input100">Email *</span>
+                    <input class="input100" type="email" name="email" placeholder="Enter Your Email ">
+                </div>
+
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100 " data-validate="Enter Your Contact ">
+                    <span class="label-input100 ">Phone *</span>
+                    <input class="input100 " type="text " name="mobile" onKeyUp="numericFilter(this);" placeholder="contact no(0-9) ">
+                </div>
+
+                <div class="wrap-input100 input100-select bg1 ">
+                    <span class="label-input100 ">Needed Services *</span>
+                    <div>
+                        <select class="js-select2 " name="service">
+							<option>Please chooses</option>
+							<option>Web development</option>
+							<option>Graphic design</option>
+							<option>SEO/SMO</option>
+                            <option>Digital marketing</option>
+                            <option>Content writing</option>
+                            <option>others</option>
+						</select>
+                        <div class="dropDownSelect2 "></div>
+                    </div>
+                </div>
+
+                <div class="w-full dis-none js-show-service ">
+
+                    <div class="wrap-input100 validate-input bg1 rs1-wrap-input100 " data-validate="Enter Your Budget ">
+                        <span class="label-input100 ">Your Budget From (INR) *</span>
+                        <input class="input100 " type="text " name="low-budget" onKeyUp="numericFilter(this);" placeholder="Your Budget From (INR) ">
+                    </div>
+                    <div class="wrap-input100 validate-input bg1 rs1-wrap-input100 " data-validate="Enter Your Budget ">
+                        <span class="label-input100 ">Your Budget To (INR) *</span>
+                        <input class="input100 " type="text " name="high-budget" onKeyUp="numericFilter(this);" placeholder="Your Budget To (INR) ">
+                    </div>
+
+                </div>
+
+                <div class="wrap-input100 validate-input bg0 rs1-alert-validate " data-validate="Please Type Your Message ">
+                    <span class="label-input100 ">Description</span>
+                    <textarea class="input100 " name="description" placeholder="Your project Description here... "></textarea>
+                </div>
+
+                <div class="container-contact100-form-btn ">
+                    <button type="submit" class="contact100-form-btn ">
+						<span>
+							Submit
+							<i class="fa fa-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <span>Created By <a href="https://www.webcraft.com ">Webcraft Creatives</a> | <span class="far fa-copyright "></span> 2021-22 All rights reserved.</span>
+    </footer>
+
+
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js "></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js "></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js "></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js "></script>
+    <script>
+        $(".js-select2 ").each(function() {
+            $(this).select2({
+                minimumResultsForSearch: 20,
+                dropdownParent: $(this).next('.dropDownSelect2')
+            });
+
+
+            $(".js-select2 ").each(function() {
+                $(this).on('select2:close', function(e) {
+                    if ($(this).val() == "Please chooses ") {
+                        $('.js-show-service').slideUp();
+                    } else {
+                        $('.js-show-service').slideUp();
+                        $('.js-show-service').slideDown();
+                    }
+                });
+            });
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js "></script>
+    <script src="vendor/daterangepicker/daterangepicker.js "></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js "></script>
+    <!--===============================================================================================-->
+    <script src="vendor/noui/nouislider.min.js "></script>
+
+    <!--===============================================================================================-->
+    <script src="js/main.js "></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13 "></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+
+    <script src="../script.js "></script>
+    <script src="../aos.js "></script>
+    <script>
+        function numericFilter(txb) {
+            txb.value = txb.value.replace(/[^\0-9]/ig, "");
+        }
+    </script>
+
+</body>
+
+</html>
